@@ -7,13 +7,14 @@
 
             Console.WriteLine("Enter a number: ");
             int size = Convert.ToInt32(Console.ReadLine());// converts number to readable input
-            Console.OutputEncoding = System.Text.Encoding.UTF8;
+            Console.OutputEncoding = System.Text.Encoding.UTF8; // displays the chessboard symbols correctly
 
-            for (int row = 0; row < size; row++)
+            // nested for loop to create the chessboard pattern
+            for (int row = 0; row < size; row++) // outer loop for rows
             {
-                for (int column = 0; column < size; column++)
+                for (int column = 0; column < size; column++)// inner loop for columns
                 {
-                    if ((row + column) % 2 == 0)
+                    if ((row + column) % 2 == 0) // checks if the sum of row and column is even
                     {
                         Console.Write("□");
                     }
