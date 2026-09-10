@@ -6,7 +6,7 @@
         {
 
             Console.WriteLine("Enter a number: ");
-            int size = Convert.ToInt32(Console.ReadLine());
+            int size = Convert.ToInt32(Console.ReadLine());// converts number to readable input
             Console.OutputEncoding = System.Text.Encoding.UTF8;
 
             for (int row = 0; row < size; row++)
@@ -27,5 +27,6 @@
             }
 
         }
+
     }
 }
